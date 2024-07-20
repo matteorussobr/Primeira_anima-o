@@ -1,0 +1,70 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+/*Quando tem o mesmo nível de importância no CSS, oq tiver por último prevalece. Caso não seja o mesmo nível de importância, prevalece o de mais importância */
+/*Caso eu queira reescrever os níveis de importância, é só colocar do lado do atributo da classe desejda o !important  assim faz ser a mais importante*/
+
+
+@keyframes anim1{
+    0%  {color:white;width: 400px;}
+    10% {color:black;width: 500px;}
+    20% {color:white;width: 400px;}
+    30% {color:black;width: 500px;}
+    40% {color:white;width: 400px;}
+    50% {color:black;width: 500px;}
+    60% {color:white;width: 400px;}
+    70% {color:black;width: 500px;}
+    80% {color:white;width: 400px;}
+    90% {color:black;width: 500px;}
+    100%{color:white;width: 400px;}
+
+    0%  {background-color:white;width: 400px;}
+    10% {background-color:violet;width: 500px;}
+    20% {background-color:blue;width: 400px;}
+    30% {background-color:aquamarine;width: 500px;}
+    40% {background-color:green;width: 400px;}
+    50% {background-color:pink;width: 500px;}
+    60% {background-color:red;width: 400px;}
+    70% {background-color:palegreen;width: 500px;}
+    80% {background-color:maroon;width: 400px;}
+    90% {background-color:gray;width: 500px;}
+    100%{background-color:black;width: 400px;}
+}
+
+
+
+
+/*Sobre animação no Css, colocar o @keyframes e dps o nome da sua animação, após abrir o { coloque from para o começo da animação e seus tributos e to para o final da animação e seus atributos. Para ver as opções de animação no Css, escreva animation- que aparece as opções*/
+/*Para ter mais controle sobre a minha animação, é só trocar o from e to por %, na 0% pra 1% ou pra 50% e por ai vai*/
+
+.teste{
+    text-align: center;
+    margin-top: 22%;
+    margin-left: 39%;
+    color: white;
+    border-color: black;
+    width: 400px;
+    height: 100px;
+    animation-name: anim1;
+    animation-duration: 15s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+button{
+    background-color: white;
+    width: 400px;
+    height: 100px;
+    animation-name: anim1;
+    animation-duration: 15s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
